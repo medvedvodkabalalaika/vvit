@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Портфолио</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background: #000000
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: #00000000;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .header-title {
+            margin: 0;
+            padding: 0 0 0 0px;
+        }
+
+        .main {
+            padding: 20px 0;
+        }
+
+        .footer {
+            background: rgb(0,0,0);
+            background: linear-gradient(45deg, rgb(20, 20, 21) 0%, rgba(50,35,70,1) 100%);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            border-color: white;
+            border-width: 10px;
+            
+        }
+
+        .wallpaper {
+            width: 700px;
+            height: 200px;
+            padding-right: 200px;
+            border-color: white;
+            
+        }
+
+        .portfolio-menu {
+            display: none;
+            background-color: #1f1f1f;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .toggle-button {
+            background-color: #4caf4f00;
+            color: white;
+            border: 3px solid #ffffff;
+            border-radius: 35px;
+            padding: 30px 145px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 24px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">Куриленко А.Ю.</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <img src="IMG_6737.jpg" alt="adolf Avatar" class="avatar">
+            <img src="IMG_6737.jpg" alt="func113" class="wallpaper">
+            <h1>Студент МТУСИ</h1>
+            <h2>Учащийся IT факультета группы БВТ2306</h2>
+            
+            <button class="toggle-button" onclick="togglePortfolio()">Извиниться!</button>
+            <div class="portfolio-menu" id="portfolioMenu">
+                <p>Посмотри мои пустые страницы!</p>
+                <ul>
+                    <li><a href="https://github.com/medvedvodkabalalaika" target="_blank">GitHub</a></li>
+                    <li><a href="https://vk.com/romanivske" target="_blank">vk</a></li>
+                    
+                    <!-- Добавьте другие ссылки на работы или проекты здесь -->
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>©romanivske
+        </p>
+    </footer>
+
+    <script>
+        function togglePortfolio() {
+            var portfolioMenu = document.getElementById("portfolioMenu");
+            if (portfolioMenu.style.display === "none") {
+                portfolioMenu.style.display = "block";
+            } else {
+                portfolioMenu.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
